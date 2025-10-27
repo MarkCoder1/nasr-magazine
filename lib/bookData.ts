@@ -10,7 +10,7 @@ export const bookData: Book = {
     {
       id: 1,
       title: "Called to Perform a Unique Services",
-      icon: "◈",
+    icon: "Sparkles", // symbolizes calling, purpose, and divine uniqueness,
       readTime: 5,
       source: "Who Am I? - Anthony Coniaris",
       content: [
@@ -44,7 +44,7 @@ export const bookData: Book = {
     {
       id: 2,
       title: "The best time of my life",
-      icon: "✦",
+      icon: "Sun",
       readTime: 7,
       source:
         "(What Is Life? ... Why Are You Here? ... What Is Your Reason for Living?)",
@@ -96,7 +96,7 @@ export const bookData: Book = {
     {
       id: 3,
       title: "A New identity in Christ",
-      icon: "❖",
+      icon: "UserCheck",
       readTime: 6,
       source: "(Fr. Anthony Coniaris - Who Am I?)",
       content: [
@@ -143,7 +143,7 @@ export const bookData: Book = {
     {
       id: 4,
       title: "It May Answer Your Questions",
-      icon: "⚜",
+      icon: "HelpCircle",
       readTime: 8,
       content: [
         {
@@ -226,7 +226,7 @@ export const bookData: Book = {
     {
       id: 5,
       title: "What our Fathers Say about Fasting",
-      icon: "✤",
+      icon: "Feather",
       readTime: 6,
       content: [
         { verse: 1, text: "St. Basil the Great on fasting:" },
@@ -291,7 +291,7 @@ export const bookData: Book = {
     {
       id: 6,
       title: "Test Your Knowledge",
-      icon: "✤",
+      icon: "BookOpenCheck",
       readTime: 6,
       content: [
         { verse: 1, text: "Do you know who am I?" },
@@ -352,8 +352,8 @@ export const bookData: Book = {
     },
     {
       id: 7,
-      title: "The Cross",
-      icon: "✤",
+        title: "The Cross",
+      icon: "Cross",
       readTime: 6,
       content: [
         { verse: 1, text: "St. John Chrysostom said:" },

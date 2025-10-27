@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Book, Chapter } from '@/types/book';
 import { Menu, X, ChevronLeft, ChevronRight, Sun, Moon, Type, Home } from 'lucide-react';
+import IconByName from '@/lib/iconMap';
 
 type Props = {
   bookData: Book;
@@ -102,7 +103,7 @@ const ChapterPage: React.FC<Props> = ({ bookData, currentChapter, theme, setThem
                     : theme === 'dark' ? 'hover:bg-slate-700 text-amber-300' : 'hover:bg-amber-50 text-amber-800'
                 }`}
               >
-                <span className="text-xl mr-2">{chapter.icon}</span>
+                <span className="text-xl mr-2"><IconByName name={chapter.icon} size={20} className="inline mr-2 align-middle" /></span>
                 {chapter.title}
               </button>
             ))}
@@ -113,7 +114,7 @@ const ChapterPage: React.FC<Props> = ({ bookData, currentChapter, theme, setThem
       <div className="pt-24 pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 animate-fadeIn">
-            <div className="text-amber-600 text-4xl mb-4">{currentChapter.icon}</div>
+            <div className="text-amber-600 text-4xl mb-4"><IconByName name={currentChapter.icon} size={56} className="text-amber-600" /></div>
             <h1 className={`text-4xl md:text-5xl font-serif font-bold mb-4 ${theme === 'dark' ? 'text-amber-200' : 'text-amber-900'}`}>
               Chapter {currentChapter.id}: {currentChapter.title}
             </h1>

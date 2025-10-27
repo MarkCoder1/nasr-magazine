@@ -3,6 +3,7 @@
 import React from 'react';
 import Particles from './Particles';
 import { Search, ChevronRight, Home } from 'lucide-react';
+import IconByName from '@/lib/iconMap';
 import { Book, Chapter } from '@/types/book';
 
 type Props = {
@@ -69,7 +70,7 @@ const IndexPage: React.FC<Props> = ({ bookData, theme, searchQuery, setSearchQue
             >
               <div className="flex items-start gap-4">
                 <div className="text-3xl text-amber-600 group-hover:scale-110 transition-transform">
-                  {chapter.icon}
+                  <IconByName name={chapter.icon} size={36} className="text-amber-600" />
                 </div>
                 <div className="flex-1">
                   <h3 className={`text-2xl font-serif font-semibold mb-2 ${theme === 'dark' ? 'text-amber-200' : 'text-amber-900'}`}>
